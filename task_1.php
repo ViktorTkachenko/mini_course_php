@@ -66,11 +66,11 @@ $filtersList = [
                                         </div>
                                     </div>
                                     <ul id="js-list-msg" class="list-group px-2 pb-2 js-list-filter">
-                                        <?php foreach($filtersList as $filter){ ?>
+                                        <?php foreach($filtersList as $filter): ?>
                                         <li class="list-group-item">
-                                            <span data-filter-tags="<?php echo $filter['tag']; ?>"><?php echo $filter['name']; ?></span>
+                                            <span data-filter-tags="<?=$filter['tag']?>"><?=$filter['name']?></span>
                                         </li>
-                                        <?php } ?>
+                                        <?php endforeach; ?>
                                     </ul>
                                     <div class="filter-message js-filter-message mt-0 fs-sm"></div>
                                 </div>
