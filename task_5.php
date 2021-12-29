@@ -1,68 +1,44 @@
 <?php
 $peopleList = [
     [
-        'img'=>[
-            'src'=>'img/demo/authors/sunny.png',
-            'alt'=>'Sunny A.',
-        ],
+        'img_src'=>'img/demo/authors/sunny.png',
+        'img_alt'=>'Sunny A.',
         'name'=>'Sunny A. (UI/UX Expert)',
         'job'=>'Lead Author',
-        'twitter'=>[
-            'href'=>'https://twitter.com/@myplaneticket',
-            'text'=>'@myplaneticket',
-        ],
-        'mail'=>[
-            'href'=>'https://wrapbootstrap.com/user/myorange',
-            'contact'=>'Contact Sunny',
-        ],
+        'twitter_href'=>'https://twitter.com/@myplaneticket',
+        'twitter_text'=>'@myplaneticket',
+        'mail_href'=>'https://wrapbootstrap.com/user/myorange',
+        'mail_contact'=>'Contact Sunny',
     ],
     [
-        'img'=>[
-            'src'=>'img/demo/authors/josh.png',
-            'alt'=>'Jos K.',
-        ],
+        'img_src'=>'img/demo/authors/josh.png',
+        'img_alt'=>'Jos K.',
         'name'=>'Jos K. (ASP.NET Developer)',
         'job'=>'Partner &amp; Contributor',
-        'twitter'=>[
-            'href'=>'https://twitter.com/@atlantez',
-            'text'=>'@atlantez',
-        ],
-        'mail'=>[
-            'href'=>'https://wrapbootstrap.com/user/Walapa',
-            'contact'=>'Contact Jos',
-        ],
+        'twitter_href'=>'https://twitter.com/@atlantez',
+        'twitter_text'=>'@atlantez',
+        'mail_href'=>'https://wrapbootstrap.com/user/Walapa',
+        'mail_contact'=>'Contact Jos',
     ],
     [
-        'img'=>[
-            'src'=>'img/demo/authors/jovanni.png',
-            'alt'=>'Jovanni Lo',
-        ],
+        'img_src'=>'img/demo/authors/jovanni.png',
+        'img_alt'=>'Jovanni Lo',
         'name'=>'Jovanni L. (PHP Developer)',
         'job'=>'Partner &amp; Contributor',
-        'twitter'=>[
-            'href'=>'https://twitter.com/@lodev09',
-            'text'=>'@lodev09',
-        ],
-        'mail'=>[
-            'href'=>'https://wrapbootstrap.com/user/lodev09',
-            'contact'=>'Contact Jovanni',
-        ],
+        'twitter_href'=>'https://twitter.com/@lodev09',
+        'twitter_text'=>'@lodev09',
+        'mail_href'=>'https://wrapbootstrap.com/user/lodev09',
+        'mail_contact'=>'Contact Jovanni',
     ],
     [
-        'img'=>[
-            'src'=>'img/demo/authors/roberto.png',
-            'alt'=>'Jovanni Lo',
-        ],
+        'img_src'=>'img/demo/authors/roberto.png',
+        'img_alt'=>'Jovanni Lo',
         'name'=>'Roberto R. (Rails Developer)',
         'job'=>'Partner &amp; Contributor',
-        'twitter'=>[
-            'href'=>'https://twitter.com/@sildur',
-            'text'=>'@sildur',
-        ],
-        'mail'=>[
-            'href'=>'https://wrapbootstrap.com/user/sildur',
-            'contact'=>'Contact Roberto',
-        ],
+        'twitter_href'=>'https://twitter.com/@sildur',
+        'twitter_text'=>'@sildur',
+        'mail_href'=>'https://wrapbootstrap.com/user/sildur',
+        'mail_contact'=>'Contact Roberto',
     ],
 ];
 ?>
@@ -103,7 +79,7 @@ $peopleList = [
                             <div class="d-flex flex-wrap demo demo-h-spacing mt-3 mb-3">
                                 <?php foreach($peopleList as $people): ?>
                                     <div class="rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
-                                        <img src="<?=$people['img']['src']?>" alt="<?=$people['img']['alt']?>" class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
+                                        <img src="<?=$people['img_src']?>" alt="<?=$people['img_alt']?>" class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
                                         <div class="ml-2 mr-3">
                                             <h5 class="m-0">
                                                 <?=$people['name']?>
@@ -111,8 +87,8 @@ $peopleList = [
                                                     <?=$people['job']?>
                                                 </small>
                                             </h5>
-                                            <a href="<?=$people['twitter']['href']?>" class="text-info fs-sm" target="_blank"><?=$people['twitter']['text']?></a> -
-                                            <a href="<?=$people['mail']['href']?>" class="text-info fs-sm" target="_blank" title="<?=$people['mail']['contact']?>"><i class="fal fa-envelope"></i></a>
+                                            <a href="<?=$people['twitter_href']?>" class="text-info fs-sm" target="_blank"><?=$people['twitter_text']?></a> -
+                                            <a href="<?=$people['mail_href']?>" class="text-info fs-sm" target="_blank" title="<?=$people['mail_contact']?>"><i class="fal fa-envelope"></i></a>
                                         </div>
                                     </div>
                                 <?php endforeach; ?>
