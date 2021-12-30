@@ -21,6 +21,7 @@ if (!empty($_FILES['image']['name'])) {
         $pdo = new PDO($dsn, $user, $pass, $opt);
 
         $stmt = $pdo->prepare('INSERT INTO images SET image = :image');
+        $stmt->execute(['image' => $imagePath . $newFileName]);
     }
 } elseif (isset($_GET['delimage'])) {
     $host = '127.0.0.1';
