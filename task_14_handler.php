@@ -31,5 +31,7 @@ if (!empty($_POST['mail'])) {
         exit;
     }
     $_SESSION['login'] = $_POST['mail'];
+    header('Location: task_15.php');
+    exit;
 }
 header('Location: task_14.php');
